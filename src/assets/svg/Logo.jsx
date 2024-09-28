@@ -1,5 +1,5 @@
 import * as React from "react";
-import logoIcon from "../../../public/feasibleLogo.png"
+import logoIcon from "/feasibleLogo.png"
 
 function SvgComponent(props) {
   return (
