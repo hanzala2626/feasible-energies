@@ -1,27 +1,18 @@
-import React from 'react'
-import './App.css'
+import React from "react";
+import { Helmet } from "react-helmet";
+// Screens
+import Landing from "./screens/Landing.jsx";
 
-function App() {
-
+export default function App() {
   return (
     <>
-      <div style={{display:"flex",alignItems:"center",justifyContent:"center",height:"full",width:"full"}}>
-      <h1 style={{display:"flex",alignItems:"center",gap:"1rem"}}>Salim bhai {" "}
-      <span style={{
-        fontSize:"4rem",
-  background: 'linear-gradient(to right, red, green)',
-  WebkitBackgroundClip: 'text',
-  WebkitTextFillColor: 'transparent'
-}}>
-  BhandWa
-</span>
-
-
-         </h1>
-      </div>
-      
+      <Helmet>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Khula:wght@400;600;800&display=swap" rel="stylesheet" />
+      </Helmet>
+      <Landing />
     </>
-  )
+  );
 }
 
-export default App
