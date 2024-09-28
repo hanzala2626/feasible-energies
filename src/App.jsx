@@ -1,27 +1,15 @@
-import React from 'react'
-import './App.css'
+import React from 'react';
+import Home from './pages/Home';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
-
   return (
-    <>
-      <div style={{display:"flex",alignItems:"center",justifyContent:"center",height:"full",width:"full"}}>
-      <h1 style={{display:"flex",alignItems:"center",gap:"1rem"}}>Salim bhai {" "}
-      <span style={{
-        fontSize:"4rem",
-  background: 'linear-gradient(to right, red, green)',
-  WebkitBackgroundClip: 'text',
-  WebkitTextFillColor: 'transparent'
-}}>
-  BhandWa
-</span>
-
-
-         </h1>
-      </div>
-      
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
